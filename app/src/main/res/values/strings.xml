@@ -1,0 +1,74 @@
+<resources>
+    <string name="app_name">Livers Predict</string>
+    <string name="tv_deskripsi1"><p>Aplikasi yang membantu pengguna memahami risiko mereka terkena penyakit liver. Dengan memasukkan data seperti usia, BMI, AlcoholConsumption, Smoking, GeneticRisk, PhysicalActivity, Diabetes, Hypertension, dan LiverFunctionTest, pengguna dapat menerima prediksi risiko berdasarkan analisis data.</p></string>
+    <string name="tv_deskripsi2"><p>Aplikasi ini bertujuan untuk Membantu pengguna memahami risiko mereka terkena penyakit liver. pengguna dapat menerima prediksi risiko berdasarkan analisis data.</p></string>
+    <string name="title_activity_navigation">NavigationActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_subtitle">android.studio@gmail.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Tentang Aplikasi</string>
+    <string name="menu_gallery">Dataset</string>
+    <string name="menu_slideshow">Fitur</string>
+    <string name="menu_model">Model</string>
+    <string name="sim_model">Simulasi Model</string>
+    <string name="selamat_datang">Selamat Datang di Applikasi</string>
+    <string name="sumber">Sumber data yang digunakan berasal dari kaggle anda bisa check dengan klik situs ini</string>
+    <string name="linknya">https://www.kaggle.com/datasets/rabieelkharoua/predict-liver-disease-1700-records-dataset</string>
+    <string name="caranya">Cara menggunakan aplikasi ini untuk prediksi Dengan memasukkan data seperti usia, BMI, AlcoholConsumption, Smoking, GeneticRisk, PhysicalActivity, Diabetes, Hypertension, dan LiverFunctionTest. lalu menekan tombol diagnosis sehingga akan muncul hasil prediksinya. </string>
+    <string name="penjelasanAritektur">Untuk memprediksi apakah seseorang terkena penyakit liver atau tidak menggunakan TensorFlow, kita bisa menggunakan arsitektur jaringan saraf tiruan (JST) seperti Multilayer Perceptron (MLP) atau Convolutional Neural Network (CNN).Dalam Applikasi ini menggunakan MPL</string>
+    <string name="penAkurasi2">Untuk menguji seberapa besar akurasi model yang dibuat, kita bisa menggunakan fungsi accuracy_score dari modul sklearn.metrics. Fungsi ini digunakan untuk menghitung akurasi prediksi model, yaitu persentase prediksi yang benar dibandingkan dengan label yang sebenarnya.</string>
+    <string name="pmodel">Model yang digunakan dalam kode Anda adalah Multilayer Perceptron (MLP), yang merupakan jenis jaringan saraf tiruan (artificial neural network). MLP adalah jaringan saraf feedforward yang terdiri dari beberapa lapisan neuron (perceptrons).</string>
+    <string name="nav_welcome">Kembali ke halama utama</string>
+
+    <string-array name="array_column">
+        <item>Age</item>
+        <item>BMI</item>
+        <item>AlcoholConsumption</item>
+        <item>Smoking</item>
+        <item>GeneticRisk</item>
+        <item>PhysicalActivity</item>
+        <item>Diabetes</item>
+        <item>Hypertension</item>
+        <item>LiverFunctionTest</item>
+    </string-array>
+
+    <integer-array name="array_dimensi">
+        <item>1700</item>
+        <item>1700</item>
+        <item>1700</item>
+        <item>1700</item>
+        <item>1700</item>
+        <item>1700</item>
+        <item>1700</item>
+        <item>1700</item>
+        <item>1700</item>
+    </integer-array>
+
+    <string-array name="array_typeData">
+        <item>Int</item>
+        <item>Float</item>
+        <item>Float</item>
+        <item>Int</item>
+        <item>Int</item>
+        <item>Float</item>
+        <item>Int</item>
+        <item>Int</item>
+        <item>Float</item>
+    </string-array>
+
+    <string-array name="array_penjelasan">
+        <item>Menunjukkan usia pasien. Usia dapat mempengaruhi risiko dan prevalensi berbagai penyakit, termasuk penyakit hati</item>
+        <item>Indeks Massa Tubuh adalah ukuran lemak tubuh berdasarkan berat badan dan tinggi badan. BMI yang tinggi atau rendah bisa berhubungan dengan risiko penyakit hati.</item>
+        <item>Mengukur jumlah konsumsi alkohol mingguan. Konsumsi alkohol yang tinggi adalah faktor risiko utama untuk penyakit hati seperti sirosis dan hepatitis alkoholik.</item>
+        <item>Merokok bisa memperburuk kondisi hati dan berkontribusi terhadap perkembangan penyakit hati.</item>
+        <item>Menunjukkan predisposisi genetik terhadap penyakit hati. Faktor genetik bisa mempengaruhi kerentanan seseorang terhadap penyakit hati.</item>
+        <item>Mengukur jumlah jam aktivitas fisik per minggu. Aktivitas fisik yang cukup dapat membantu menjaga kesehatan hati.</item>
+        <item>Diabetes adalah faktor risiko untuk penyakit hati, terutama penyakit hati berlemak non-alkoholik.</item>
+        <item>Hipertensi bisa mempengaruhi fungsi hati dan dikaitkan dengan kondisi seperti penyakit hati berlemak.</item>
+        <item>Hasil tes laboratorium yang mengukur enzim dan protein tertentu dalam darah yang mencerminkan fungsi hati. Nilai yang abnormal dapat mengindikasikan kerusakan atau penyakit hati.</item>
+    </string-array>
+
+</resources>

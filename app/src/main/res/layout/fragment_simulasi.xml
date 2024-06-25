@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.simulasi.SimulasiActivity">
+
+    <EditText
+        android:id="@+id/editAge"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="42dp"
+        android:ems="10"
+        android:hint="Age"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageButton
+        android:id="@+id/helpAge"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="Help"
+        android:scaleType="fitXY"
+        android:src="@android:drawable/ic_menu_help"
+        app:layout_constraintBottom_toBottomOf="@+id/editAge"
+        app:layout_constraintEnd_toEndOf="@+id/editAge"
+        app:layout_constraintTop_toTopOf="@+id/editAge"
+        app:layout_constraintVertical_bias="0.55" />
+
+    <EditText
+        android:id="@+id/editBmi"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="BMI"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="@+id/editAge"
+        app:layout_constraintStart_toStartOf="@+id/editAge"
+        app:layout_constraintTop_toBottomOf="@+id/editAge" />
+
+
+    <ImageButton
+        android:id="@+id/helpBmi"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="Help"
+        android:scaleType="fitXY"
+        android:src="@android:drawable/ic_menu_help"
+        app:layout_constraintBottom_toBottomOf="@+id/editBmi"
+        app:layout_constraintEnd_toEndOf="@+id/editBmi"
+        app:layout_constraintTop_toTopOf="@+id/editBmi"
+        app:layout_constraintVertical_bias="0.55" />
+
+    <EditText
+        android:id="@+id/editAlcoholConsumption"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="AlcoholConsumption"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="@+id/editBmi"
+        app:layout_constraintStart_toStartOf="@+id/editBmi"
+        app:layout_constraintTop_toBottomOf="@+id/editBmi" />
+
+    <ImageButton
+        android:id="@+id/helpAlcoholConsumption"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="Help"
+        android:scaleType="centerInside"
+        android:src="@android:drawable/ic_menu_help"
+        app:layout_constraintBottom_toBottomOf="@+id/editAlcoholConsumption"
+        app:layout_constraintEnd_toEndOf="@+id/editAlcoholConsumption"
+        app:layout_constraintTop_toTopOf="@+id/editAlcoholConsumption" />
+
+
+    <RadioGroup
+        android:id="@+id/radioGroupSmoking"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="@+id/editAlcoholConsumption"
+        app:layout_constraintStart_toEndOf="@+id/tv_Pmeroko"
+        app:layout_constraintTop_toBottomOf="@+id/editAlcoholConsumption">
+
+        <RadioButton
+            android:id="@+id/radioSmokingYes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yes" />
+
+        <RadioButton
+            android:id="@+id/radioSmokingNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/radioGroupGeneticRisk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="@+id/radioGroupSmoking"
+        app:layout_constraintStart_toEndOf="@+id/tv_PgeneticRisk"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroupSmoking">
+
+        <RadioButton
+            android:id="@+id/radioGeneticRiskLow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Low"
+            />
+
+        <RadioButton
+            android:id="@+id/radioGeneticRiskMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Medium" />
+        <RadioButton
+            android:id="@+id/radioGeneticRiskHigh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="High" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/editPhysicalActivity"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="PhysicalActivity"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="@+id/radioGroupGeneticRisk"
+        app:layout_constraintStart_toStartOf="@+id/tv_PgeneticRisk"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroupGeneticRisk" />
+
+    <ImageButton
+        android:id="@+id/helpPhysicalActivity"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="Help"
+        android:scaleType="centerInside"
+        android:src="@android:drawable/ic_menu_help"
+        app:layout_constraintBottom_toBottomOf="@+id/editPhysicalActivity"
+        app:layout_constraintEnd_toEndOf="@+id/editPhysicalActivity"
+        app:layout_constraintTop_toTopOf="@+id/editPhysicalActivity" />
+
+
+    <RadioGroup
+        android:id="@+id/radioGroupDiabetes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="@+id/editPhysicalActivity"
+        app:layout_constraintStart_toEndOf="@+id/tv_Pdiabetes"
+        app:layout_constraintTop_toBottomOf="@+id/editPhysicalActivity">
+
+        <RadioButton
+            android:id="@+id/radioDiabetesYes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yes" />
+
+        <RadioButton
+            android:id="@+id/radioDiabetesNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/radioGroupHypertension"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="@+id/radioGroupDiabetes"
+        app:layout_constraintStart_toEndOf="@+id/tv_Phypertension"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroupDiabetes">
+
+        <RadioButton
+            android:id="@+id/radioHypertensionYes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yes" />
+
+        <RadioButton
+            android:id="@+id/radioHypertensionNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/editLiverFunctionTest"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="LiverFunctionTest"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="@+id/radioGroupHypertension"
+        app:layout_constraintStart_toStartOf="@+id/tv_Phypertension"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroupHypertension" />
+
+    <ImageButton
+        android:id="@+id/helpLiverFunctionTest"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="Help"
+        android:scaleType="centerInside"
+        android:src="@android:drawable/ic_menu_help"
+        app:layout_constraintBottom_toBottomOf="@+id/editLiverFunctionTest"
+        app:layout_constraintEnd_toEndOf="@+id/editLiverFunctionTest"
+        app:layout_constraintTop_toTopOf="@+id/editLiverFunctionTest" />
+
+
+    <Button
+        android:id="@+id/btnCheck"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/borderv2"
+        android:text="Diagnosis"
+        app:layout_constraintEnd_toStartOf="@+id/btnReset"
+        app:layout_constraintStart_toStartOf="@+id/editLiverFunctionTest"
+        app:layout_constraintTop_toBottomOf="@+id/editLiverFunctionTest" />
+
+    <TextView
+        android:id="@+id/txtResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text=""
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/btnReset"
+        app:layout_constraintStart_toStartOf="@+id/btnCheck"
+        app:layout_constraintTop_toBottomOf="@+id/btnCheck" />
+
+    <TextView
+        android:id="@+id/tv_Pmeroko"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Smoking?"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/radioGroupSmoking"
+        app:layout_constraintEnd_toStartOf="@+id/radioGroupSmoking"
+        app:layout_constraintStart_toStartOf="@+id/editAlcoholConsumption"
+        app:layout_constraintTop_toBottomOf="@+id/editAlcoholConsumption" />
+
+    <TextView
+        android:id="@+id/tv_PgeneticRisk"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="GeneticRisk?"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/radioGroupGeneticRisk"
+        app:layout_constraintEnd_toStartOf="@+id/radioGroupGeneticRisk"
+        app:layout_constraintStart_toStartOf="@+id/tv_Pmeroko"
+        app:layout_constraintTop_toBottomOf="@+id/tv_Pmeroko" />
+
+    <TextView
+        android:id="@+id/tv_Pdiabetes"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Diabetes?"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/radioGroupDiabetes"
+        app:layout_constraintEnd_toStartOf="@+id/radioGroupDiabetes"
+        app:layout_constraintStart_toStartOf="@+id/editPhysicalActivity"
+        app:layout_constraintTop_toBottomOf="@+id/editPhysicalActivity" />
+
+    <TextView
+        android:id="@+id/tv_Phypertension"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Hypertension?"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/radioGroupHypertension"
+        app:layout_constraintEnd_toStartOf="@+id/radioGroupHypertension"
+        app:layout_constraintStart_toStartOf="@+id/tv_Pdiabetes"
+        app:layout_constraintTop_toBottomOf="@+id/tv_Pdiabetes" />
+
+    <Button
+        android:id="@+id/btnReset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnCheck"
+        android:layout_centerHorizontal="true"
+        android:onClick="resetInputs"
+        android:text="Reset"
+        android:background="@drawable/borderv3"
+        app:layout_constraintEnd_toEndOf="@+id/editLiverFunctionTest"
+        app:layout_constraintStart_toEndOf="@+id/btnCheck"
+        app:layout_constraintTop_toTopOf="@+id/btnCheck" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

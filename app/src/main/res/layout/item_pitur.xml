@@ -1,0 +1,49 @@
+<!-- res/layout/item_row.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="8dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/columnName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="32dp"
+            android:layout_weight="1"
+            android:text="TextView"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toStartOf="@+id/columnTypeData"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/columnDimensi"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_weight="1"
+            android:text="TextView"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/columnTypeData" />
+
+        <TextView
+            android:id="@+id/columnTypeData"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="1"
+            android:text="TextView"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toStartOf="@+id/columnDimensi"
+            app:layout_constraintStart_toEndOf="@+id/columnName" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>
